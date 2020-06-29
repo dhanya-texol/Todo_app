@@ -7,7 +7,7 @@ return this.props.Todos.map((Todo)=>(
 <TodoItems  key={Todo.id} Todo={Todo} markComplete={this.props.markComplete} delTodos={this.props.delTodos}/>
 ));}}
 Todo.propTypes={
-Todos:PropTypes.object.isRequired,
+Todos:PropTypes.array.isRequired,
 markComplete:PropTypes.func.isRequired,
 delTodos:PropTypes.func.isRequired,
 }

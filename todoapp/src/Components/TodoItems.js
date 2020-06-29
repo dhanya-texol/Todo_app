@@ -11,7 +11,7 @@ textDecoration:this.props.Todo.completed ?
 }
 }
 render(){
-const {id ,title,complete}= this.props.Todo;
+const {id ,title}= this.props.Todo;
 return(
 <div style={this.getStyle()}>
 <p>
@@ -24,10 +24,8 @@ return(
 }}
 //proptypes
 TodoItems.propTypes={
-Todos:PropTypes.array.isRequired,
 markComplete:PropTypes.func.isRequired,
 delTodos:PropTypes.func.isRequired,
-Addtodo:PropTypes.func.isRequired,
 }
 
 const ButtonStyle={
