@@ -14,3 +14,29 @@
 .btn:hover {
     background: #666;
 }
+
+.App {
+    background-color: rgb(27, 113, 189);
+    padding: 30px;
+    height: 300px;
+}
+
+.todo_list {
+    background-color: ghostwhite;
+    border-radius: 4px;
+    padding: 5px;
+    max-width: 400px;
+}
+
+.todo {
+    background: #fff;
+    box-shadow: 1px 1px 1px black;
+    padding: 3px 10px;
+    font-size: 12px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}

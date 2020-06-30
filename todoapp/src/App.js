@@ -1,17 +1,18 @@
 
-import React from 'react';
+import React ,{useState} from 'react';
 import Todo from './Components/Todo';
 import AddTodo from './Components/AddTodos';
 import Header from './Components/Layout/Header';
 import {BrowserRouter as Router , Route} from 'react-router-dom'
 import About from './Components/Pages/About'
 import axios from 'axios';
+import Apps from './Apps'
 class App extends React.Component{
 state={
 Todos:[]
 }
 componentDidMount(){
-axios.get('https://jsonplaceholder.typicode.com/todos?_limit=10')
+axios.get('https://jsonplaceholder.typicode.com/todos?_limit=5')
 .then(res=>
 this.setState({Todos:res.data}))
 }
@@ -51,6 +52,7 @@ return(
 <React.Fragment>
 <AddTodo Addtodo={this.Addtodo}/>
 <Todo Todos={this.state.Todos} markComplete={this.markComplete} delTodos={this.delTodos}/>
+<Apps/>
 </React.Fragment>
 )}
 />
